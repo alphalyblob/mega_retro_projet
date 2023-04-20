@@ -1,0 +1,223 @@
+.bomberman{
+    background: url(../img/bomberman.jpg)    ;
+   }
+
+   .alex_kidd{
+    background: url(../img/alex_kidd_in_miracle_world.jpg)    ;
+   }
+
+
+
+
+   /* style card*/
+
+
+#card{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   
+   
+   
+   #dad{
+       height: 300px;
+       width: 300px;
+       position: relative;
+       overflow: hidden;
+       border:solid 1px #262e36;
+       border-radius: 10px;
+   }
+   
+   #son{
+       height: 300px;
+       width: 300px;
+       background-color: #262e36ca;
+       top: 215px;
+       position: absolute;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 10% 90%;
+       border-radius: 10px 10px 0 0;
+   }
+   
+   
+   
+   #dad:hover #son{
+       cursor: pointer;
+       animation-duration: 2s;
+       animation-name: slide;
+       animation-fill-mode: forwards;
+   }
+   
+   #son:hover{
+       cursor: pointer;
+       animation-duration: 2s;
+       animation-name: slide;
+       animation-fill-mode: forwards;
+   }
+   
+   .box{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 50px;
+       width: 150px;
+       background-color: #ffc451;
+       color: #262E36;
+       border-radius: 3px;
+       margin-top: 20px;
+       margin-bottom: 10px;
+       grid-row: 1/2;
+       grid-column: 1/2;
+   }
+   .box1{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 50px;
+       width: 50px;
+       background-color: #262E36;
+       color: #ffc451;
+       border-radius: 3px;
+       margin-top: 20px;
+       margin-bottom: 10px;
+       grid-column: 1/2;
+       grid-row: 1/2;
+   }
+   .box2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 250px;
+       width: 260px;
+       color: #ffc451;
+       border-radius: 3px;
+       grid-row: 2/3;
+       grid-column: 1/2;
+       padding: 5px;
+   }
+   
+   #top{
+       display: flex;
+       justify-content: space-around;
+   }
+
+ 
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+}
+
+
+   
+.console:hover,label:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+   
+   
+   
+   @keyframes slide{
+       0%{top: 215; background-color:#262e36ca ;}
+       100%{top: 0px; background-color:#262e36f1 }
+   }
+
+
+   .console{
+    height: 125px;
+    width: 210px;
+    padding: 10px;
+    border: #ffc451 1px solid;
+   }
+
+  
+
+   input[type=checkbox] + .champ label img{
+    height: 120px;
+   }
+
+
+
+   input[type=checkbox].cons{
+    display: none;
+   }
+
+   input[type=checkbox].cons{
+    display: none;
+   }
+
+   input[type=checkbox]:checked + .champ{
+    
+    filter: grayscale(0.5);
+    background: rgba(0, 0, 0, 0.5);
+    
+   }
+
+
+
+   .banniere{
+    width: 60%;
+
+   }
+
+   .liste_jeux{
+    display: grid;
+    padding: 50px 10px;
+    grid-template-columns: repeat(auto-fill,302px);
+    gap:10vw;
+    background-color: beige;
+    justify-content: center;
+   }
+
+   .liste_console{
+    margin: 15px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   
+
+
+
+   @media screen and (max-width:700px){
+
+    .liste_jeux{
+       
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   }
+
+   
+
+}
+
+@media screen and (max-width:800px){
+
+        .banniere{
+            width: 100%;
+            max-height: 7%;
+        }
+
+}
+
+
+@media screen and (min-width:1000px){
+
+    .banniere{
+        width: 50%;
+        max-height: 90%;
+    }
+
+}

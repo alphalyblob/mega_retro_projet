@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="fa/js/all.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+
+
+    <header>
+        <section class="logo">
+            <figure class="logofig">
+                <img src="img/logo-sansbg-resize.png" alt="">
+            </figure>
+            <div class="ongletspages">
+                <a href="sony.html">SONY</a>
+                <a href="sega.html">SEGA</a>
+                <a href="nintendo.html">NINTENDO</a>
+                <a href="microsoft.html">MICROSOFT</a>
+            </div>
+        </section>
+
+        <section class="items">
+            <input type="search" id="barre" placeholder="Rechercher...">
+            <button class="btnsearch"><i class="fa-solid fa-magnifying-glass" id="loupe"
+                    onclick="displaybarre()"></i></button>
+            <i class="fa-solid fa-circle-user" id="profil"></i>
+            <i class="fa-solid fa-cart-shopping" id="panier"></i>
+        </section>
+    </header>
+    <main>
+        <div class="titre">
+            <h1>NOUS CONTACTER</h1>
+        </div>
+
+        <div class="formulaire">
+            <div class="cbackground">
+                <div class="c1">
+                    <input type="text" placeholder="Nom..." id="cid">
+                    <i class="fa-solid fa-user" id="cidicone"></i>
+                </div>
+                <div class="c2">
+                    <input type="email" placeholder="Mail..." id="cmail">
+                    <i class="fa-solid fa-at" id="cmailicone"></i>
+                </div>
+                <div class="c3">
+                    <textarea placeholder="Ecrivez-nous..." id="cmessage" rows="10"></textarea>
+                    <i class="fa-solid fa-message" id="cmessageicone"></i>
+                    <a class="btnpad"><i class="fa-solid fa-angles-right" id="csendbtn"></i></a>
+                </div>
+            </div>
+    
+
+
+
+
+        </div>
+    </main>
+
+
+    <footer>
+
+        <div class="flex">
+            <div class="lien">
+                <ul>
+                    <a href="qui_somme_nous.html" class="footer_liens"><li> Qui sommes nous ?</li> </a>
+                    <a href="cgu.html" class="footer_liens"><li> Informations légales</li> </a>
+                    <a href="cgv.html" class="footer_liens"><li> Conditions Générales de Vente</li> </a>
+                    <a href="faq.html" class="footer_liens"><li> FAQ</li> </a>
+                    <a href="contact.html" class="footer_liens"><li> Contact</li> </a>
+                </ul>
+            </div>
+
+            <hr class="portable">
+                    <div class="cote">
+
+                        <div class="height">
+
+                        <h2>Newsletter</h2>
+
+                        <div class="newsletter">
+
+<pre class="hidden">Inscrivez  à notre Newsletter vous pour 
+connaitre nos nouvelles offres et 
+actualités</pre>
+
+                            <input type="mail" placeholder="Exemple@mail.com" id="mail">
+                            <button id="abonner">S'abonner</button>
+                        </div>
+                    </div>
+                        <hr class="ordi hidden">
+                        
+                        <div class="height2">
+                        <h2 class="hidden">Suivez nous</h2>
+
+                            <div class="reseaux">
+                                
+                                <div class="sociaux"><i class="fa-brands fa-facebook" style="color: #FFFFFF;"></i></div>
+                                <div class="bas sociaux"><i class="fa-brands fa-instagram" style="color: #FFFFFF;"></i></div>
+                                <div class="sociaux"><i class="fa-brands fa-twitter" style="color: #FFFFFF;"></i></div>
+                                <div class="bas sociaux"><i class="fa-brands fa-pinterest" style="color: #FFFFFF;"></i></div>
+                                <div class="sociaux"><i class="fa-brands fa-youtube" style="color: #FFFFFF;"></i></div>       
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </footer>
+
+
+    </div>
+
+    <script>
+        function displaybarre() {
+            document.getElementById("barre").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

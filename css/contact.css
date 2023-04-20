@@ -1,0 +1,99 @@
+/*ELEMENTS MAIN*/
+
+main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px;
+}
+
+
+
+.titre{
+    display: flex;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 1;
+    color: #FFC451;
+}
+
+.formulaire{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.cbackground{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 10%;
+    background-color: rgba(105, 105, 105, 0.7);
+}
+
+#cmessage{
+    padding: 0;
+    margin: 0;
+    background: #526374;
+    opacity: 0.85;
+    color: #F5E5A9;
+    border: 1px solid #FFC451;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    width: 380px;
+}
+
+#cid,#cmail{
+    background: #526374;
+    opacity: 0.85;
+    color: #F5E5A9;
+    border: 1px solid #FFC451;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    width: 360px;
+}
+
+.c1,.c2,.c3{
+    position: relative;
+}
+
+#cidicone,#cmailicone{
+    position: absolute;
+    right: 1%;
+    top: 25%;
+}
+
+#cmessageicone{
+    position: absolute;
+    right: 2%;
+    top: 4%;
+}
+.btnpad{
+    padding: 0%;
+}
+#csendbtn{
+    position: absolute;
+    top: 88%;
+    right: 2%;
+}
+
+#cidicone,#cmailicone,#cmessageicone,#csendbtn{
+    color: #FFC451;
+}
+
+#csendbtn:hover{
+    color: #F5E5A9;
+    scale: 130%;
+}
+
+/*FIN ELEMENTS MAIN*/
